@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { SotaWeb3ReactProvider } from 'sota-web3-react-test-1'
+
 
 ReactDOM.render(
   <React.StrictMode>
+    <SotaWeb3ReactProvider>
     <App />
+    </SotaWeb3ReactProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
